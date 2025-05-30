@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>管理画面</title>
+  <style>
+    #logArea {
+      width: 600px;
+      height: 400px;
+      border: 1px solid #ccc;
+      overflow-y: scroll;
+      white-space: pre-wrap;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>管理画面</h1>
+  <div>
+    <input type="text" id="banIp" placeholder="BANするIPを入力" />
+    <button id="btnBan">BAN送信</button>
+    <button id="btnReset">サーバーリセット</button>
+  </div>
+  <pre id="logArea"></pre>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
